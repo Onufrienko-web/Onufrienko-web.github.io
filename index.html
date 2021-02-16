@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=`, initial-scale=1.0">
+	<title>Smesharic</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+     </div>
+     <div id="overlay">
+     <div class="container">
+     	<img src="img/login1.jpg" alt="">
+        <div class="dws-input">
+            <input type="text" name="username" placeholder="Введите логин:">
+            <input type="password" name="password" placeholder="Введите пароль:">
+         </div>
+         <div class="dws-input">
+            <input type="submit" class="dws-submit" name="submit" value="Вход" onclick="document.getElementById('overlay').style.display='none';">
+         <br />
+			<a href="#" id="orion">Сбросить пароль</a>
+         </div>      
+         	<button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+		</div>
+	</div>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="img/logo.png" width="355px" height="99px" alt="logo"></a>
+		</div>
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">HOME</a>
+				<a href="projects.html">PROJECTS</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+				<a id="menu" href="#" class="icon">&#9776;</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<img src="img/web.jpg" alt="web" class="mw-100">
+		<div class="advantages__conteiner">
+			<div class="advantages">
+				<div class="advantages__item">
+					<img src="img/1.png" alt="">
+					<h2>About our company</h2>
+					<p>We have been working since 2000. We have branches all over the world.</p>
+				</div>
+				<div class="advantages__item">
+					<img src="img/2.png" alt="">
+					<h2>Who are we?</h2>
+					<p>We are a professional computer animation and graphic design company.</p>
+				</div>
+				<div class="advantages__item">
+					<img src="img/3.png" alt="">
+					<h2>How to join us?</h2>
+					<p>You can become our employee. You just need to register on our website</p>
+				</div>
+				<div class="advantages__item">
+					<img src="img/4.png" alt="">
+					<h2>Benefits of working with us</h2>
+					<p>You work - we provide. Stable career growth, full social package and vacation twice a year.</p>
+				</div>
+				<div class="advantages__item">
+					<img src="img/5.png" alt="">
+					<h2>Ability to work remotely</h2>
+					<p>Our company also provides the opportunity to work remotely. But only when necessary.</p>
+				</div>
+				<div class="advantages__item">
+					<img src="img/6.png" alt="">
+					<h2>Personal approach to everyone</h2>
+					<p>Flexible work schedule, individual for everyone, friendly close-knit team and friendly attitude.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<nav>
+			<a href="index.html">HOME</a>
+			<a href="projects.html">PROJECTS</a>
+			<a href="blog.html">BLOG</a>
+			<a href="contact.html">CONTACT</a>
+			<a href="about.html">ABOUT</a>
+			<a href="services.html">SERVICES</a>
+			<a href="location.html">LOCATION</a>
+		</nav>
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="img/logo.png" alt=""></a>
+		</div>
+		<div class="social">
+			<a href="#"><img src="img/em.png" alt=""></a>
+			<a href="#"><img src="img/face.png" alt=""></a>
+			<a href="#"><img src="img/goo.png" alt=""></a>
+			<a href="#"><img src="img/inst.png" alt=""></a>
+			<a href="#"><img src="img/pint.png" alt=""></a>
+		</div>
+		<p>Onufrienko Alexandr 2021</p>
+	</footer>
+	<script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+      <!-- скрипт для входа -->
+      <script type="text/javascript">
+      // таймаут перед появлением
+        var delay_popup = 5;
+        setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+        // добавление класса 
+        document.body.classList.add('fixed-page');
+        // функция, убирающая класс
+         function  Remove(){
+          document.body.classList.remove('fixed-page');
+        }
+      </script>
+      <!-- остальные скрипты -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
