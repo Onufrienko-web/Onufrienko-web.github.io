@@ -94,7 +94,7 @@ body{
  	background-image: url("../img/fon.jpg");
  }
  .container{
- 	width: 450px;
+ 	width: 35%;
 	 left: 35%;
 	 position: absolute;
 	background-color: rgba(24, 33, 52, 0.7);
